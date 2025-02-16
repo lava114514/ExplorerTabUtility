@@ -81,8 +81,8 @@ namespace ExplorerTabUtility.Forms
             btnNewProfile.NoAccentTextColor = System.Drawing.Color.Empty;
             btnNewProfile.Size = new System.Drawing.Size(76, 36);
             btnNewProfile.TabIndex = 5;
-            btnNewProfile.Text = "New";
-            toolTip.SetToolTip(btnNewProfile, "New profile.");
+            btnNewProfile.Text = "新建";
+            toolTip.SetToolTip(btnNewProfile, "新建配置文件");
             btnNewProfile.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             btnNewProfile.UseAccentColor = true;
             btnNewProfile.UseVisualStyleBackColor = true;
@@ -103,8 +103,8 @@ namespace ExplorerTabUtility.Forms
             btnImport.NoAccentTextColor = System.Drawing.Color.Empty;
             btnImport.Size = new System.Drawing.Size(76, 36);
             btnImport.TabIndex = 6;
-            btnImport.Text = "Import";
-            toolTip.SetToolTip(btnImport, "Import profiles.");
+            btnImport.Text = "导出";
+            toolTip.SetToolTip(btnImport, "导入配置文件");
             btnImport.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             btnImport.UseAccentColor = true;
             btnImport.UseVisualStyleBackColor = true;
@@ -125,8 +125,8 @@ namespace ExplorerTabUtility.Forms
             btnExport.NoAccentTextColor = System.Drawing.Color.Empty;
             btnExport.Size = new System.Drawing.Size(76, 36);
             btnExport.TabIndex = 7;
-            btnExport.Text = "Export";
-            toolTip.SetToolTip(btnExport, "Export profiles.");
+            btnExport.Text = "导入";
+            toolTip.SetToolTip(btnExport, "导出配置文件");
             btnExport.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             btnExport.UseAccentColor = true;
             btnExport.UseVisualStyleBackColor = true;
@@ -147,8 +147,8 @@ namespace ExplorerTabUtility.Forms
             btnSave.NoAccentTextColor = System.Drawing.Color.Empty;
             btnSave.Size = new System.Drawing.Size(76, 36);
             btnSave.TabIndex = 8;
-            btnSave.Text = "Save";
-            toolTip.SetToolTip(btnSave, "Persist profiles for next time you open the app.");
+            btnSave.Text = "保存";
+            toolTip.SetToolTip(btnSave, "保留配置文件以供下次打开应用程序时使用");
             btnSave.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             btnSave.UseAccentColor = true;
             btnSave.UseVisualStyleBackColor = true;
@@ -169,8 +169,8 @@ namespace ExplorerTabUtility.Forms
             cbSaveProfilesOnExit.Ripple = true;
             cbSaveProfilesOnExit.Size = new System.Drawing.Size(121, 37);
             cbSaveProfilesOnExit.TabIndex = 9;
-            cbSaveProfilesOnExit.Text = "Save on exit";
-            toolTip.SetToolTip(cbSaveProfilesOnExit, "Automatically saves your profiles on exit.\r\nTo persist profiles for next time you open the app.");
+            cbSaveProfilesOnExit.Text = "退出时保存";
+            toolTip.SetToolTip(cbSaveProfilesOnExit, "退出时自动保存配置文件\r\n保留配置文件以供下次打开应用程序时使用");
             cbSaveProfilesOnExit.UseVisualStyleBackColor = true;
             cbSaveProfilesOnExit.CheckedChanged += CbSaveProfilesOnExit_CheckedChanged;
             // 
@@ -189,7 +189,7 @@ namespace ExplorerTabUtility.Forms
             MinimumSize = new System.Drawing.Size(762, 225);
             Name = "MainForm";
             Padding = new System.Windows.Forms.Padding(3, 55, 3, 3);
-            Text = "Settings";
+            Text = "设置";
             Deactivate += MainForm_Deactivate;
             ResumeLayout(false);
             PerformLayout();

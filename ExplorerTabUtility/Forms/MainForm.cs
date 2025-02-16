@@ -79,25 +79,25 @@ public partial class MainForm : MaterialForm
         strip.Items.Add(CreateKeyboardHookMenuItem());
 
         // WindowHook
-        strip.Items.Add(CreateMenuItem("Window Hook", SettingsManager.IsWindowHookActive, ToggleWindowHook, "WindowHook"));
+        strip.Items.Add(CreateMenuItem("收纳窗口开关", SettingsManager.IsWindowHookActive, ToggleWindowHook, "WindowHook"));
 
         // WindowHook
-        strip.Items.Add(CreateMenuItem("ReuseTabs", SettingsManager.ReuseTabs, ToggleReuseTabs, "ReuseTabs"));
+        strip.Items.Add(CreateMenuItem("复用标签页", SettingsManager.ReuseTabs, ToggleReuseTabs, "ReuseTabs"));
 
         // Separator
         strip.Items.Add(new ToolStripSeparator());
 
         // Startup
-        strip.Items.Add(CreateMenuItem("Add to startup", RegistryManager.IsInStartup(), static (_, _) => RegistryManager.ToggleStartup()));
+        strip.Items.Add(CreateMenuItem("添加到启动项", RegistryManager.IsInStartup(), static (_, _) => RegistryManager.ToggleStartup()));
 
         // Settings
-        strip.Items.Add(CreateMenuItem("Settings", false, (_, _) => ShowForm(), checkOnClick: false));
+        strip.Items.Add(CreateMenuItem("设置", false, (_, _) => ShowForm(), checkOnClick: false));
 
         // Separator
         strip.Items.Add(new ToolStripSeparator());
 
         // Exit
-        strip.Items.Add(CreateMenuItem("Exit", false, static (_, _) => Application.Exit()));
+        strip.Items.Add(CreateMenuItem("退出", false, static (_, _) => Application.Exit()));
 
         return strip;
     }
@@ -108,7 +108,7 @@ public partial class MainForm : MaterialForm
     }
     private ToolStripMenuItem CreateKeyboardHookMenuItem()
     {
-        var menuItem = CreateMenuItem("Keyboard Hook", SettingsManager.IsKeyboardHookActive, ToggleKeyboardHook, "KeyboardHookMenu");
+        var menuItem = CreateMenuItem("快捷键开关", SettingsManager.IsKeyboardHookActive, ToggleKeyboardHook, "KeyboardHookMenu");
 
         AddProfilesToMenuItem(menuItem);
         return menuItem;
